@@ -1,0 +1,27 @@
+{
+	"name" : "rsr/yii2-check-deps",
+	"description" : "Check for new migrations/dependencies of Yii 2 application when in development mode and apply them if user asked to.",
+	"license" : "MIT",
+	"type" : "yii2-extension",
+	"keywords" : [
+		"yii",
+		"yii2",
+		"auto apply",
+		"migrations",
+		"dependencies"
+	],
+	"authors" : [{
+			"name" : "Reza Saberi Rad",
+			"email" : "rsr_reza@yahoo.com"
+		}
+	],
+	"minimum-stability" : "dev",
+	"require" : {
+		"yiisoft/yii2" : "*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"rsr\\yii2\\checkDeps\\" : ""
+		}
+	}
+}
