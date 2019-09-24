@@ -1,0 +1,7 @@
+# composer vendor dir
+/vendor
+
+# Eclipse project file
+.buildpath
+.project
+.settings/
