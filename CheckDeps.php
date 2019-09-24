@@ -39,7 +39,7 @@ class CheckDeps extends BaseObject implements BootstrapInterface
      *
      * @var string
      */
-    protected $viewPath = '@vendor/rsr/yii2-check-deps/views/check-deps/index';
+    protected $viewPath = '@rsrCheckDepsRoot/views/check-deps/index';
 
     /**
      * Returns the created instance of this component.
@@ -66,6 +66,8 @@ class CheckDeps extends BaseObject implements BootstrapInterface
     public function bootstrap($app)
     {
         if (YII_ENV_DEV && (! $app->request->isAjax) && $this->needAction()) {
+            \Yii::setAlias('@rsrCheckDepsRoot', __DIR__);
+
             $app->controllerMap[$this->controllerId] = $this->controllerClass;
             $app->catchAll = [
                 $this->controllerId . '/' . $this->controllerAction
