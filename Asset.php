@@ -10,11 +10,15 @@ use yii\web\AssetBundle;
 class Asset extends AssetBundle
 {
 
-    public $sourcePath = '@vendor/rsr/yii2-check-deps/assets';
+    public $sourcePath = '@rsrCheckDepsRoot/assets';
 
-    public $css = [];
+    public $css = [
+        'css/process.css'
+    ];
 
-    public $js = [];
+    public $js = [
+        'js/process.js'
+    ];
 
     public $depends = [
         'yii\web\YiiAsset'
