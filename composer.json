@@ -6,9 +6,10 @@
 	"keywords" : [
 		"yii",
 		"yii2",
-		"auto apply",
-		"migrations",
-		"dependencies"
+		"migration",
+		"dependencies",
+		"migration manager",
+		"migrations automation"
 	],
 	"authors" : [{
 			"name" : "Reza Saberi Rad",

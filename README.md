@@ -38,3 +38,7 @@ if (YII_ENV_DEV) {
 ...
 return $config;
 ```
+
+Resources
+----
+* Extension page on yii website: [https://www.yiiframework.com/extension/rsr/yii2-check-deps](https://www.yiiframework.com/extension/rsr/yii2-check-deps).
